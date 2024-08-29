@@ -5,7 +5,8 @@ from flask_cors import CORS  # Import CORS
 
 # Create an instance of the Flask class
 app = Flask(__name__)
-CORS(app)  # Apply CORS to the entire app
+CORS(app, origins=["https://petowner-front3.onrender.com"])
+# Apply CORS to the entire app
 
 # Manually define the PostgreSQL connection details
 DB_HOST = "dpg-cr6ugig8fa8c738266jg-a.oregon-postgres.render.com"  # Example: 'localhost' or 'db.render.com'
